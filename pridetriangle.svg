@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+  <path id="red" d="M0,80 L20,100 L0,120 Z" style="fill:#d20605"/>
+  <path id="orange" d="M0,80 V40 L40,80 L20,100 Z" style="fill:#ef9c00"/>
+  <path id="yellow" d="M0,40 V0 L60,60 L40,80 Z" style="fill:#e5fe02"/>
+  <path id="green" d="M0,0 H40 L80,40 L60,60 Z" style="fill:#09be01"/>
+  <path id="blue" d="M40,0 H80 L100,20 L80,40 Z" style="fill:#081a9a"/>
+  <path id="purple" d="M80,0 H120 L100,20 Z" style="fill:#76008a"/>
+  <rect id="black" width="50" height="50" style="fill:#010101"/>
+  <rect id="brown" width="40" height="40" style="fill:#603814"/>
+  <rect id="lightblue" width="30" height="30" style="fill:#73d6ed"/>
+  <rect id="pink" width="20" height="20" style="fill:#ffafc8"/>
+  <rect id="white" width="10" height="10" style="fill:#fff"/>
+</svg>

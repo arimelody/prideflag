@@ -1,0 +1,27 @@
+#pride-triangle img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    transform-origin: 0% 0%;
+    transition: transform .5s cubic-bezier(.32,1.63,.41,1.01);
+    z-index: 100;
+}
+#pride-triangle[right] img {
+    left: initial;
+    right: -120px;
+    rotate: 90deg;
+}
+#pride-triangle img:hover {
+    transform: scale(110%);
+}
+#pride-triangle img:active {
+    transform: scale(90%);
+}
+
+@media only screen and (max-width: 720px) {
+    #pride-triangle img {
+        width: 6rem;
+        right: -6rem;
+    }
+}

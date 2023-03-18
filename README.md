@@ -8,7 +8,14 @@ it tucks into the top-right corner of any website you drop it on, and you're fre
 
 ![progressive pride flag](pridetriangle.svg)
 
-this flag is currently in use over at my own website, [mellodoot.com](https://mellodoot.com)! feel free to check it out if you'd like to see it in action!
+this flag currently represents:
+
+- original LGBTQ+ colours! 🏳️‍🌈
+- marginalized people of colour (POC) communities! 🧑🏾🧔🏿
+- trans pride! 🏳️‍⚧️
+- intersex! ♂️ ♀️
+
+this flag is currently in use over at my own website, [mellodoot.com](https://www.mellodoot.com)! feel free to check it out if you'd like to see it in action!
 
 ## how do I use this on my own website?
 

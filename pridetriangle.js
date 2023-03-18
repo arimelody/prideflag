@@ -17,6 +17,18 @@ function create_rect(id, x, y, width, height, fill) {
     return rect;
 }
 
+function create_circle(id, x, y, radius, stroke, stroke_width, fill) {
+    const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    circle.setAttribute('id', id);
+    circle.setAttribute('cx', x);
+    circle.setAttribute('cy', y);
+    circle.setAttribute('r', radius);
+    circle.setAttribute('stroke', stroke);
+    circle.setAttribute('stroke-width', stroke_width);
+    circle.setAttribute('fill', fill);
+    return circle;
+}
+
 function create_svg() {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.setAttribute("viewBox", "0 0 120 120");
@@ -32,11 +44,14 @@ function create_svg() {
     svg.appendChild(create_path("blue", "M120,80 V40 L80,80 L100,100 Z", "#081a9a"));
     svg.appendChild(create_path("purple", "M120,80 L100,100 L120,120 Z", "#76008a"));
 
-    svg.appendChild(create_rect("black", "70", "0", "50", "50", "#010101"));
-    svg.appendChild(create_rect("brown", "80", "0", "40", "40", "#603814"));
-    svg.appendChild(create_rect("lightblue", "90", "0", "30", "30", "#73d6ed"));
-    svg.appendChild(create_rect("pink", "100", "0", "20", "20", "#ffafc8"));
-    svg.appendChild(create_rect("white", "110", "0", "10", "10", "#ffffff"));
+    svg.appendChild(create_rect("black", "60", "0", "60", "60", "#010101"));
+    svg.appendChild(create_rect("brown", "70", "0", "50", "50", "#603814"));
+    svg.appendChild(create_rect("lightblue", "80", "0", "40", "40", "#73d6ed"));
+    svg.appendChild(create_rect("pink", "90", "0", "30", "30", "#ffafc8"));
+    svg.appendChild(create_rect("white", "100", "0", "20", "20", "#ffffff"));
+
+    svg.appendChild(create_rect("intyellow", "110", "0", "10", "10", "#fed800"));
+    svg.appendChild(create_circle("intpurple", "120", "0", "5", "#7800ab", "2", "none"));
 
     return svg;
 }

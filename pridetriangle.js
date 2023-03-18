@@ -85,16 +85,6 @@ function create_triangle() {
         this.style.transform = "initial";
     };
 
-    window.onresize = function () {
-        if (window.innerWidth <= 720) {
-            triangle.style.width = "6rem";
-            triangle.style.right = "-6rem";
-        } else {
-            triangle.style.width = "120px";
-            triangle.style.right = "-120px";
-        }
-    }
-
     link.appendChild(triangle);
 
     return link;

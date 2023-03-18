@@ -1,20 +1,23 @@
 # progressive pride flag! 🌈
-## made with ❤ by mellodoot!
 
-a lovely little pride flag made in vector, and optimised to be nice and lightweight!
+## made with ❤ by mellodoot
 
-it tucks into the top-left or top-right corner of any website you drop it on, and you're free to link it to whichever lgbt-supporting site you like :)
+a lovely little pride flag made in svg, loaded with js, and optimised to be nice and lightweight!
+
+it tucks into the top-right corner of any website you drop it on, and you're free to link it to whichever lgbt-supporting site you like :)
 
 ![progressive pride flag](pridetriangle.svg)
 
 this flag is currently in use over at my own website, [mellodoot.com](https://mellodoot.com)! feel free to check it out if you'd like to see it in action!
 
-### how do I put this in the top-right of my website?
-simple! just add `right` as an attribute to the surrounding `<a>` tag! the css stylesheet will handle the rest :)
+## how do I use this on my own website?
 
-**example:**
+simple! just slap this code into your html document, and the js file will be automagically loaded into your site, generating your flag!
+
 ```html
-<a id="pride-triangle" ... right>
+<script type="text/javascript" src="https://www.mellodoot.com/js/pridetriangle.js" defer></script>
 ```
+
+...or copy the code from `pridetriangle.js` and drop it into your own self-hosted file. up to you!
 
 have fun spreading the gay! 🌈

@@ -23,8 +23,10 @@ simple! just slap this code into your html document, and the js file will be aut
 
 ```html
 <script type="text/javascript" src="https://www.mellodoot.com/js/pridetriangle.js" defer></script>
+<!-- in case this goes down, try the below example! -->
+<script type="text/javascript" src="https://github.com/mellodoot/prideflag/blob/main/prideflag.js" defer></script>
 ```
 
-...or copy the code from `pridetriangle.js` and drop it into your own self-hosted file. up to you!
+...or copy the code from `prideflag.js` and drop it into your own self-hosted file. up to you!
 
 have fun spreading the gay! 🌈

@@ -1,3 +1,23 @@
+/**
+ * 🏳️‍🌈🏳️‍⚧️💖 pride flag 💖🏳️‍⚧️🏳️‍🌈
+ * made with ❤️ by mellodoot, 2023
+ * 
+ * an alternate, insanely over-engineered version of prideflag.js
+ * which generates all required svg elements at runtime.
+ * 
+ * given the svg doesn't exactly change however, this turned
+ * out to be wholly unnecessary.
+ * 
+ * neat proof of concept, though!
+ */
+
+/**
+ * Creates an SVG path using the given parameters.
+ * @param {string} id The SVG `id` tag to give the path element.
+ * @param {string} d An SVG draw path.
+ * @param {string} fill A fill colour to apply within an included `style` tag.
+ * @returns An SVG path.
+ */
 function create_path(id, d, fill) {
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
     path.setAttribute('id', id);
@@ -6,6 +26,16 @@ function create_path(id, d, fill) {
     return path;
 }
 
+/**
+ * Creates an SVG rectangle using the given parameters.
+ * @param {string} id The SVG `id` tag to give the rectangle element.
+ * @param {number} x The X coordinate of the rectangle.
+ * @param {number} y The Y coordinate of the rectangle.
+ * @param {number} width The width of the rectangle.
+ * @param {number} height The height of the rectangle.
+ * @param {string} fill A fill colour to apply within an included `style` tag.
+ * @returns An SVG rectangle.
+ */
 function create_rect(id, x, y, width, height, fill) {
     const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     rect.setAttribute('id', id);
@@ -17,19 +47,35 @@ function create_rect(id, x, y, width, height, fill) {
     return rect;
 }
 
-function create_circle(id, x, y, radius, stroke, stroke_width, fill) {
+/**
+ * Creates an SVG circle using the given parameters.
+ * @param {string} id The SVG `id` tag to give the circle element.
+ * @param {number} x The X coordinate of the circle.
+ * @param {number} y The Y coordinate of the circle.
+ * @param {number} radius The radius of the circle.
+ * @param {string} stroke_colour The stroke colour of the rectangle.
+ * @param {number} stroke_width The stroke width of the rectangle.
+ * @param {string} fill A fill colour to apply within an included `style` tag.
+ * @returns An SVG rectangle.
+ */
+function create_circle(id, x, y, radius, stroke_colour, stroke_width, fill) {
     const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
     circle.setAttribute('id', id);
     circle.setAttribute('cx', x);
     circle.setAttribute('cy', y);
     circle.setAttribute('r', radius);
-    circle.setAttribute('stroke', stroke);
+    circle.setAttribute('stroke', stroke_colour);
     circle.setAttribute('stroke-width', stroke_width);
     circle.setAttribute('fill', fill);
     return circle;
 }
 
-function create_svg() {
+/**
+ * Uses the included SVG generation methods to create a complete
+ * pride flag SVG element.
+ * @returns An SVG pride flag.
+ */
+function create_pride_flag_svg() {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.setAttribute("viewBox", "0 0 120 120");
 
@@ -56,13 +102,16 @@ function create_svg() {
     return svg;
 }
 
-function create_triangle() {
+/**
+ * @returns A completed pride flag with link and animations.
+ */
+function create_pride_flag() {
     const link = document.createElement("a");
     link.id = "pride-triangle";
     link.href = "https://github.com/mellodoot/prideflag";
     link.target = "_blank";
 
-    const triangle = create_svg();
+    const triangle = create_pride_flag_svg();
     triangle.style.position = "fixed";
     triangle.style.top = "0";
     triangle.style.right = "0";
@@ -90,5 +139,5 @@ function create_triangle() {
     return link;
 }
 
-const triangle = create_triangle();
+const triangle = create_pride_flag();
 document.body.appendChild(triangle);

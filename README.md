@@ -1,6 +1,6 @@
 # progressive pride flag! 🌈
 
-## made with ❤ by mellodoot
+## made with ❤ by ari melody
 
 a lovely little pride flag made in svg, loaded with js, and optimised to be nice and lightweight!
 
@@ -15,18 +15,10 @@ this flag currently represents:
 - trans pride! 🏳️‍⚧️
 - intersex! ♂️ ♀️
 
-this flag is currently in use over at my own website, [mellodoot.com](https://www.mellodoot.com)! feel free to check it out if you'd like to see it in action!
+this flag is currently in use over at my own website, [arimelody.me](https://arimelody.me)! feel free to check it out if you'd like to see it in action!
 
 ## how do I use this on my own website?
 
-simple! just slap this code into your html document, and the js file will be automagically loaded into your site, generating your flag!
-
-```html
-<script type="text/javascript" src="https://www.mellodoot.com/js/pridetriangle.js" defer></script>
-<!-- in case this goes down, try the below example! -->
-<script type="text/javascript" src="https://github.com/mellodoot/prideflag/blob/main/prideflag.js" defer></script>
-```
-
-...or copy the code from `prideflag.js` and drop it into your own self-hosted file. up to you!
+simple! just slap [prideflag.js](prideflag.js) onto your website, and the js file will automagically generate your flag on page load!
 
 have fun spreading the gay! 🌈

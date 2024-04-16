@@ -1,9 +1,9 @@
 /**
  * 🏳️‍🌈🏳️‍⚧️💖 pride flag 💖🏳️‍⚧️🏳️‍🌈
- * made with ❤️ by mellodoot, 2023
+ * made with ❤️ by ari melody, 2024
  * 
- * web: https://mellodoot.com
- * source: https://github.com/mellodoot/prideflag
+ * web: https://arimelody.me
+ * source: https://git.arimelody.me/ari/prideflag
  */
 
 const pride_flag_svg =
@@ -26,7 +26,7 @@ const pride_flag_svg =
     </svg>`;
 
 const pride_flag_css =
-    `#pride-flag svg {
+    `#prideflag svg {
         position: fixed;
         top: 0;
         right: 0;
@@ -36,23 +36,23 @@ const pride_flag_css =
         z-index: 8008135;
         pointer-events: none;
     }
-    #pride-flag svg:hover {
+    #prideflag svg:hover {
         transform: scale(110%);
     }
-    #pride-flag svg:active {
+    #prideflag svg:active {
         transform: scale(110%);
     }
-    #pride-flag svg * {
+    #prideflag svg * {
         pointer-events: all;
     }`;
 
 function create_pride_flag() {
-    const container = document.createElement("a");
-    container.id = "pride-flag";
-    container.href = "https://github.com/mellodoot/prideflag";
-    container.target = "_blank";
-    container.innerHTML = pride_flag_svg;
-    return container;
+    const flag = document.createElement("a");
+    flag.id = "prideflag";
+    flag.href = "https://git.arimelody.me/ari/prideflag";
+    flag.target = "_blank";
+    flag.innerHTML = pride_flag_svg;
+    return flag;
 }
 
 function load_pride_flag_style() {
@@ -62,5 +62,5 @@ function load_pride_flag_style() {
 }
 
 load_pride_flag_style();
-pride_flag = create_pride_flag();
-document.body.appendChild(pride_flag);
+flag = create_pride_flag();
+document.body.appendChild(flag);

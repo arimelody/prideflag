@@ -1,3 +1,17 @@
+<!--
+  pride flag - copyright (c) 2024 ari melody
+  
+  this code is provided AS-IS, WITHOUT ANY WARRANTY, to be
+  freely redistributed and/or modified as you please, however
+  retaining this license in any redistribution.
+  
+  please use this flag to link to an LGBTQI+-supporting page
+  of your choosing!
+  
+  web: https://arimelody.me
+  source: https://git.arimelody.me/ari/prideflag
+-->
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <path id="red" d="M120,80 L100,100 L120,120 Z" style="fill:#d20605"/>
   <path id="orange" d="M120,80 V40 L80,80 L100,100 Z" style="fill:#ef9c00"/>

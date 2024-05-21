@@ -1,10 +1,18 @@
-/**
- * 🏳️‍🌈🏳️‍⚧️💖 pride flag 💖🏳️‍⚧️🏳️‍🌈
- * made with ❤️ by ari melody, 2024
- * 
- * web: https://arimelody.me
- * source: https://git.arimelody.me/ari/prideflag
- */
+//
+// pride flag - copyright (c) 2024 ari melody
+// 
+// this code is provided AS-IS, WITHOUT ANY WARRANTY, to be
+// freely redistributed and/or modified as you please, however
+// retaining this license in any redistribution.
+// 
+// please use this flag to link to an LGBTQI+-supporting page
+// of your choosing!
+// 
+// web: https://arimelody.me
+// source: https://git.arimelody.me/ari/prideflag
+//
+
+const pride_url = "https://git.arimelody.me/ari/prideflag";
 
 const pride_flag_svg =
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
@@ -26,7 +34,7 @@ const pride_flag_svg =
     </svg>`;
 
 const pride_flag_css =
-    `#prideflag svg {
+    `#prideflag {
         position: fixed;
         top: 0;
         right: 0;
@@ -36,20 +44,20 @@ const pride_flag_css =
         z-index: 8008135;
         pointer-events: none;
     }
-    #prideflag svg:hover {
+    #prideflag:hover {
         transform: scale(110%);
     }
-    #prideflag svg:active {
+    #prideflag:active {
         transform: scale(110%);
     }
-    #prideflag svg * {
+    #prideflag * {
         pointer-events: all;
     }`;
 
 function create_pride_flag() {
     const flag = document.createElement("a");
     flag.id = "prideflag";
-    flag.href = "https://git.arimelody.me/ari/prideflag";
+    flag.href = pride_url;
     flag.target = "_blank";
     flag.innerHTML = pride_flag_svg;
     return flag;
